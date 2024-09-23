@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,7 +11,9 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="dist/theme/blood.css" />
+
+    <link rel="stylesheet" href="main.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -19,20 +21,66 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown>
-          <textarea data-template>
-						# Section 1 
-						cosas 
-						# Section 2 
-						____ 
-
-						---
-
-						# Section 2 
-						mas cosas
-					</textarea
-          >
+        <section>
+          <div class="image-container">
+            <img class="image" src="assets/images/qrcode.png" alt="tristan" />
+            <div class="overlay">
+              <p>Escanea si quieres verlo en tu telefono</p>
+            </div>
+          </div>
         </section>
+
+        <section>
+          <section data-markdown>
+            > “ella apareció en la sala de en medio de los vasallos, su belleza
+            resplandeció en tal forma, que se iluminaron los muros, como si
+            diera el sol mañanero”. Tristan e Isolda
+          </section>
+          <section>
+            <div class="image-container">
+              <img
+                class="image"
+                src="assets/images/tristan_isolda.jpeg"
+                alt="tristan"
+              />
+              <div class="overlay">Generado con Stable Diffusion 3 Medium</div>
+            </div>
+          </section>
+          <section>
+            <div class="image-container">
+              <img
+                class="image"
+                src="assets/images/tristan_isolda2.jpg"
+                alt="tristan"
+              />
+              <div class="overlay">Generado con Leonardo AI</div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            > "Los ojos y labios de Sonoko resplandecían. Su belleza, al
+            recordarme mi impotencia, me pareció opresiva. Y esta sensación hizo
+            que la existencia de la misma me pareciera efímera". Confesiones de
+            una máscara, de Yukio Mishima
+          </section>
+          <section>
+            <div class="image-container">
+              <img class="image" src="assets/images/sonoko.jpg" alt="tristan" />
+              <div class="overlay">Generado con Leonardo AI</div>
+            </div>
+          </section>
+        </section>
+        <!-- <section>
+          <section data-markdown>
+            <section class="data-template">> "IMAGE"</section>
+          </section>
+          <section data-markdown>
+            <section data-template># IMAGE --- # a</section>
+            <section class="data-template">"IMAGE2"</section>
+            <section class="data-template">"IMAGE3"</section>
+          </section>
+        </section> -->
       </div>
     </div>
 
