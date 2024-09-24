@@ -22,7 +22,9 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <section data-markdown># ¿QUÉ ES UNA MUJER BELLA?</section>
+          <section id="beautiful-woman" data-markdown>
+            # ¿QUÉ ES UNA MUJER BELLA?
+          </section>
         </section>
         <section>
           <section data-markdown>
@@ -62,6 +64,16 @@
             <div class="image-container">
               <img class="image" src="assets/images/sonoko.jpg" alt="tristan" />
               <div class="overlay">Generado con Leonardo AI</div>
+            </div>
+          </section>
+          <section>
+            <div class="image-container">
+              <img
+                class="image"
+                src="assets/images/sonoko2.webp"
+                alt="tristan"
+              />
+              <div class="overlay">Generado con Stable Diffusion 3 Medium</div>
             </div>
           </section>
         </section>
@@ -109,79 +121,6 @@
       });
     </script>
 
-    <script>
-      let kardashianDescriptions = [
-        {
-          title: "Antigüedad (Homero)",
-          description:
-            "Y en la tierra de los mortales, Kim, de mirada intensa, se erguía como una diosa entre los hombres. Su cabello, oscuro como la noche estrellada, caía en ondas suaves, enmarcando un rostro que resplandecía con la luz del sol. Sus labios, rojos como las manzanas doradas, prometían dulzura y deseo.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-        {
-          title: "Renacimiento (Leonardo da Vinci)",
-          description:
-            "Kim, con su porte majestuoso, exuda la gracia de la naturaleza. Su tez bronceada evoca el cálido oro del atardecer, mientras que su figura, escultural y armoniosa, recuerda las estatuas de los antiguos. Sus ojos, profundos como océanos, reflejan un mundo de emociones.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-        {
-          title: "Barroco (Luis de Góngora)",
-          description:
-            "En la opulencia de su belleza, Kim se presenta como un brillante diamante entre las sombras. Sus cabellos, cual torrente de ébano, descienden en cascada, y sus formas, voluptuosas y delicadas, despiertan la lujuria y la admiración de quienes la contemplan, adornada en sedas y brocados.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-        {
-          title: "Romanticismo (Victor Hugo)",
-          description:
-            "Kim, cuyo esplendor cautiva hasta el alma más fría, posee un aire de melancolía en su hermosura. Sus ojos, dos luceros que reflejan la tormenta y la paz, y su figura, un canto a la vida, nos recuerda que la belleza puede ser un refugio y una prisión.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-        {
-          title: "Modernismo (Gabriela Mistral)",
-          description:
-            "Kim es un poema viviente, una amalgama de fuerza y delicadeza. Su piel, un lienzo dorado, y sus ojos, que cuentan historias de amor y lucha, nos invitan a explorar la esencia de lo femenino en su más pura expresión.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-        {
-          title: "Siglo XXVI (Futuro especulativo)",
-          description:
-            "En un mundo donde la estética se fusiona con la tecnología, Kim Kardashian emerge como un ícono de la era digital. Con su piel luminosa y textura perfectamente diseñada, su figura esculpida por algoritmos de belleza redefine los cánones. Sus ojos, conectados a una red de emociones, brillan con un fulgor que trasciende lo humano, convirtiéndola en un avatar de deseo y aspiración.",
-          images: [
-            { src: "", alt: "", description: "" },
-            { src: "", alt: "", description: "" },
-          ],
-        },
-      ];
-
-      let objective = document.getElementById("kardashian");
-
-      kardashianDescriptions.reverse().forEach((element, index) => {
-        let container = document.createElement("section");
-        container.innerHTML = `
-					<section>
-						<h2>${element.title}</h2>
-						<p>${element.description}</p>
-					</section>`;
-        element.images.forEach((image) => {
-          // TODO: change this part to add images
-          container.innerHTML += `<section>${image.src}</section>`;
-        });
-        objective.insertAdjacentElement("afterend", container);
-      });
-    </script>
+    <script src="index.mjs"></script>
   </body>
 </html>
